@@ -1,7 +1,0 @@
-mkdocs
-
-# Add libraries you want to use
-# mkdocs-material
-# fontawesome-markdown
-# markdown-include
-# pymdown-extensions 
