@@ -8,6 +8,9 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 * `mkdocs -h` - Print help message and exit.
 * `mkdocs gh-deploy --config-file ./mkdocs.yml --remote-branch main` - Deploy to github pages
 
+## Deploy GH-PAGE
+mkdocs gh-deploy --config-file ./mkdocs.yml
+
 ## Project layout
 
     mkdocs.yml    # The configuration file.
