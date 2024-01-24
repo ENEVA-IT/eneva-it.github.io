@@ -1,1 +1,5 @@
 site_name: Eneva IT Docs
+nav:
+  - Home: index.md
+  - About: about.md
+theme: readthedocs
