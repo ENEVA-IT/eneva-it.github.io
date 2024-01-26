@@ -1,4 +1,5 @@
 mkdocs
+mkdocs-dracula-theme
 
 # Add libraries you want to use
 # mkdocs-material
