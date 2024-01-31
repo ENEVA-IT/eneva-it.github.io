@@ -1,4 +1,4 @@
-name: Build&Deploy
+name: Publish2Confluence
 on: 
   workflow_dispatch:
   push:
