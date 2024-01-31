@@ -22,7 +22,7 @@ jobs:
           fileslocation: './docs'
           should_upload: true
           confluence_url: 'https://eneva.atlassian.net/wiki'
-          confluence_space_key: '712020ac12504fda354922b745409d45453f4f'
+          confluence_space_key: '~712020ac12504fda354922b745409d45453f4f'
           auth_username: 'henrique.gurgacz@eneva.com.br'
-          auth_api_token: ${{secrets.CONFLUENCE_API_TOKEN}}
+          auth_api_token: ${{ secrets.CONFLUENCE_API_TOKEN }}
           is_preview: false
