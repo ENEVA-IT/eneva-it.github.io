@@ -18,13 +18,12 @@ jobs:
         uses: actions/checkout@v3
         with:
           ref: main
-      - name: Conversion step
-        uses: TTengs/MarkdownToConfluence@v3
+      - name: Sync Docs as Code - Confluence
+        uses: Bhacaz/docs-as-code-confluence@v2
         with:
-          fileslocation: './docs'
-          should_upload: true
-          confluence_url: 'https://eneva.atlassian.net/wiki'
-          confluence_space_key: '~712020ac12504fda354922b745409d45453f4f'
-          auth_username: 'henrique.gurgacz@eneva.com.br'
-          auth_api_token: ${{ secrets.CONFLUENCE_API_TOKEN }}
-          is_preview: false
+          folder: docs
+          username: henrique.gurgacz@eneva.com.br
+          password: ${{ secrets.CONFLUENCE_API_TOKEN }}
+          confluence-base-url: https://eneva.atlassian.net/wiki
+          space-key: '~712020ac12504fda354922b745409d45453f4f'
+          parent-page-id: 201818188
