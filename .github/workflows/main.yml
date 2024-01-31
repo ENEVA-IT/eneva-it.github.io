@@ -1,0 +1,28 @@
+name: Build&Deploy
+on: 
+  workflow_dispatch:
+  push:
+      branches: ['main', 'development']
+      paths-ignore:
+          - '**/README.md'
+          - '.github/**'
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  markdown_to_confluence_job:
+    runs-on: ubuntu-latest
+    name: Converting Markdown to Confluence
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Conversion step
+        uses: TTengs/MarkdownToConfluence@v3
+        with:
+          fileslocation: './docs'
+          should_upload: true
+          confluence_url: 'https://eneva.atlassian.net/wiki'
+          confluence_space_key: '712020ac12504fda354922b745409d45453f4f'
+          auth_username: 'henrique.gurgacz@eneva.com.br'
+          auth_api_token: ${{secrets.CONFLUENCE_API_TOKEN}}
+          is_preview: false
