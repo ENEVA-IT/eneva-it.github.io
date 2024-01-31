@@ -1,6 +1,6 @@
 # Quote Machine
 
-![teste](img/Untitled 1.png "teste")
+![teste](img/Untitled1.png "teste")
 
 * Status: Proposta <!-- optional -->
 * Envolvidos: Henrique Gurgacz, Luiz Perin
